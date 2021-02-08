@@ -22,7 +22,7 @@ This is a countdown timer to a preset date. This is a challenge by <https://fron
 
 ## Setup
 
-Download the files locally to your computer, and click on the index file
+Download the files locally to your computer, and open the index.html file
 
 ## Features
 
