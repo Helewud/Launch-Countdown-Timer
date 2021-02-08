@@ -10,7 +10,7 @@ body {
 body {
     font-family: 'Red Hat Text', sans-serif;
     background-color: #1e1f29;
-    background-image: url("images/bg-stars.svg");
+    background-image: url("../images/bg-stars.svg");
 }
 
 h1 {
@@ -29,7 +29,7 @@ h1 {
     position: absolute;
     bottom: 0;
     height: 25%;
-    background-image: url("images/pattern-hills.svg");
+    background-image: url("../images/pattern-hills.svg");
     background-repeat: no-repeat;
     background-size: cover;
 }
