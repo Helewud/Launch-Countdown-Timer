@@ -14,7 +14,7 @@
 ## General info
 
 Add more general information about project. What the purpose of the project is? Motivation?
-This is a countdown timer to a preset date. This is a challenge by <frontendmentor.io>
+This is a countdown timer to a preset date. This is a challenge by <https://frontendmentor.io>
 
 ## Screenshots
 
