@@ -14,15 +14,15 @@
 ## General info
 
 Add more general information about project. What the purpose of the project is? Motivation?
-This is a countdown timer to a preset date. This is a challenge by <frontendmentor.io>
+This is a countdown timer to a preset date. This is a challenge by <https://frontendmentor.io>
 
 ## Screenshots
 
-![Example screenshot](readme.png)
+![Example screenshot](images/readme.png)
 
 ## Setup
 
-Download the files locally to your computer, and click on the index file
+Download the files locally to your computer, and open the index.html file
 
 ## Features
 
