@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,400;1,700&display=swap');
+
+html,
+body {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Red Hat Text', sans-serif;
+    background-color: #1e1f29;
+    background-image: url("images/bg-stars.svg");
+}
+
+h1 {
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+    height: inherit;
+    line-height: 30vh;
+    letter-spacing: 10px;
+}
+
+.attribution {
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    height: 25%;
+    background-image: url("images/pattern-hills.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.attribution a {
+    color: #3e52a3;
+}
+
+.ref {
+    height: inherit;
+    line-height: 28vh;
+}
+
+.attribution .social_media_icons {
+    height: inherit;
+    line-height: 26vh;
+}
+
+.attribution .social_media_icons svg {
+    padding: 0 10px;
+}
+
+.svg:hover {
+    fill: #fb6087;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    margin: 10px;
+    line-height: 140px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 10px 2px rgba(22, 20, 20, 0.8);
+    font-size: 90px;
+    font-weight: 700;
+}
+
+.time::before,
+.time::after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    color: #fb6087;
+    overflow: hidden;
+    perspective: 160px;
+    content: attr(data-number);
+    border-radius: 10px;
+}
+
+.time::before {
+    top: 0;
+    bottom: 50%;
+    border-bottom: 1px solid hsl(234, 17%, 12%);
+    border-radius: 10px 10px 0 0;
+    background-color: #303147;
+}
+
+.time::after {
+    top: 50%;
+    bottom: 0;
+    border-radius: 0 0 10px 10px;
+    line-height: 0;
+    background-color: #343650;
+}
+
+.back::before {
+    content: "";
+    width: 6px;
+    height: 10px;
+    display: block;
+    position: absolute;
+    top: 46%;
+    background-color: hsl(234, 17%, 12%);
+    border-radius: 0 60px 60px 0;
+}
+
+.back::after {
+    content: "";
+    width: 6px;
+    height: 13px;
+    display: block;
+    position: absolute;
+    top: 45%;
+    left: 96.5%;
+    background-color: hsl(234, 17%, 12%);
+    border-radius: 60px 0 0 60px;
+}
+
+.card>h2 {
+    font-size: 14px;
+    position: relative;
+    top: 70%;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+    color: #ffffff94;
+    font-weight: 600;
+}
+
+/* Media Queries: Tabled Portrait */
+@media screen and (min-width: 620px) and (max-width: 768px) {
+    h1 {
+        font-size: 1.5em;
+        height: inherit;
+        line-height: 1.5vh;
+        letter-spacing: 10px;
+        padding: 18% 0 14% 0;
+    }
+
+    .card {
+        position: relative;
+        width: 120px;
+        height: 120px;
+        margin: 10px;
+        line-height: 120px;
+        text-align: center;
+        border-radius: 8px;
+        box-shadow: 0px 8px 2px rgba(22, 20, 20, 0.8);
+        font-size: 65px;
+        font-weight: 600;
+    }
+
+    .time::before {
+        top: 0;
+        bottom: 50%;
+        border-bottom: 0.3px solid hsl(234, 17%, 12%);
+        border-radius: 8px 8px 0 0;
+        background-color: #303147;
+    }
+
+    .time::after {
+        top: 50%;
+        bottom: 0;
+        border-radius: 0 0 8px 8px;
+        line-height: 0;
+        background-color: #343650;
+    }
+
+    .back::before {
+        width: 6px;
+        height: 10px;
+        top: 45%;
+        background-color: hsl(234, 17%, 12%);
+        border-radius: 0 60px 60px 0;
+    }
+
+    .back::after {
+        width: 7px;
+        height: 13px;
+        top: 44%;
+        left: 95%;
+        background-color: #191a24;
+        border-radius: 60px 0 0 60px;
+    }
+
+    .card>h2 {
+        font-size: 12px;
+        font-weight: normal;
+        position: relative;
+        top: 70%;
+        text-transform: uppercase;
+        letter-spacing: 0.3rem;
+        color: #ffffff94;
+        font-weight: 700;
+    }
+
+    .attribution {
+        font-size: 12px;
+        object-fit: cover;
+    }
+}
+
+/* Media Queries: mobile */
+@media screen and (min-width: 375px) and (max-width: 619px) {
+    h1 {
+        font-size: 1.2em;
+        height: inherit;
+        line-height: 2.5vh;
+        letter-spacing: 10px;
+        padding: 25% 0 18% 0;
+        width: 100%;
+        margin: auto;
+
+    }
+
+    .card {
+        position: relative;
+        width: 95px;
+        height: 95px;
+        margin: 10px;
+        line-height: 95px;
+        text-align: center;
+        border-radius: 8px;
+        box-shadow: 0px 8px 2px rgba(22, 20, 20, 0.8);
+        font-size: 50px;
+        font-weight: 700;
+    }
+
+    .time::before {
+        top: 0;
+        bottom: 50%;
+        border-bottom: 0.3px solid hsl(234, 17%, 12%);
+        border-radius: 8px 8px 0 0;
+        background-color: #303147;
+    }
+
+    .time::after {
+        top: 50%;
+        bottom: 0;
+        border-radius: 0 0 8px 8px;
+        line-height: 0;
+        background-color: #343650;
+    }
+
+    .back::before {
+        width: 4px;
+        height: 6px;
+        top: 45%;
+        background-color: hsl(234, 17%, 12%);
+        border-radius: 0 60px 60px 0;
+    }
+
+    .back::after {
+        width: 4px;
+        height: 8px;
+        top: 44.6%;
+        left: 96%;
+        background-color: #191a24;
+        border-radius: 60px 0 0 60px;
+    }
+
+    .card>h2 {
+        font-size: 9px;
+        font-weight: 600;
+        position: relative;
+        top: 70%;
+        text-transform: uppercase;
+        letter-spacing: 0.3rem;
+        color: #ffffff94;
+    }
+
+    .attribution {
+        font-size: 9px;
+        object-fit: cover;
+    }
+}
+
+/* Media Queries: mobile */
+@media screen and (max-width: 480px) {
+    h1 {
+        display: inline-block;
+        color: rgb(255, 255, 255);
+        font-size: 0.9em;
+        /* height: inherit; */
+        line-height: normal;
+        letter-spacing: 7px;
+        padding: 50% 0 20% 0;
+        width: 100%;
+        margin: auto;
+
+    }
+
+    .card {
+        position: relative;
+        width: 60px;
+        height: 60px;
+        margin: 10px;
+        line-height: 60px;
+        text-align: center;
+        border-radius: 5px;
+        box-shadow: 0px 5px 2px rgba(22, 20, 20, 0.8);
+        font-size: 28px;
+        font-weight: 700;
+    }
+
+    .time::before {
+        top: 0;
+        bottom: 50%;
+        border-bottom: 0.3px solid hsl(234, 17%, 12%);
+        border-radius: 5px 5px 0 0;
+        background-color: #303147;
+    }
+
+    .time::after {
+        top: 50%;
+        bottom: 0;
+        border-radius: 0 0 5px 5px;
+        line-height: 0;
+        background-color: #343650;
+    }
+
+    .back::before {
+        width: 4px;
+        height: 6px;
+        top: 44%;
+        background-color: hsl(234, 17%, 12%);
+        border-radius: 0 60px 60px 0;
+    }
+
+    .back::after {
+        width: 4px;
+        height: 8px;
+        top: 43%;
+        left: 94%;
+        background-color: #191a24;
+        border-radius: 60px 0 0 60px;
+    }
+
+    .card>h2 {
+        font-size: 6px;
+        font-weight: normal;
+        position: relative;
+        top: 70%;
+        text-transform: uppercase;
+        letter-spacing: 0.3rem;
+        color: #ffffff94;
+    }
+
+    .attribution {
+        font-size: 9px;
+        object-fit: cover;
+    }
+}
