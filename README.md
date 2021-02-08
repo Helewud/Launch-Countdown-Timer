@@ -18,7 +18,7 @@ This is a countdown timer to a preset date. This is a challenge by <frontendment
 
 ## Screenshots
 
-![Example screenshot](readme.png)
+![Example screenshot](images/readme.png)
 
 ## Setup
 
